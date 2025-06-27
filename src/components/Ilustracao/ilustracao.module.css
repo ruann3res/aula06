@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.imagem {
+  flex: 1 1 320px;
+  min-width: 200px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.legenda {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .imagem {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .legenda {
+    font-size: 0.95rem;
+  }
+}
